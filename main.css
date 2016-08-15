@@ -1,0 +1,115 @@
+body {
+	color: #808080;
+	background-color: #ffeead;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	background-color: #88d8b0;
+	color: white;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 50px;
+	text-shadow: 2px 2px #35a79c;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+/* buttons */
+
+#addIncomeButton {
+	background-color: #87c187;
+	font-weight: bold;
+	color: white;
+	box-shadow: 3px 3px #699669;
+}
+
+#addExpenseButton {
+	background-color: #c25e5a;
+	font-weight: bold;
+	color: white;
+	box-shadow: 3px 3px #974946;
+}
+
+.trashcan {
+	padding-top: 3px;
+	float: right;
+	width: 12%;
+	height: 12%;
+}
+
+/* modifying bootstrap panel defaults */
+
+.panel-default > .panel-heading-income {
+	background-color: #96d796;
+	color: white;
+}
+
+.panel-default > .panel-heading-expense {
+	background-color: #d86964;
+	color: white;
+}
+
+.panel-default > .panel-heading-summary {
+	background-color: #49afa5;
+	color: white;
+}
+
+.panel-default, .panel-body {
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.panel-default, .panel-heading {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+/* minor text changes */
+
+#totalIncomeText, 
+#totalExpenseText, 
+#leftText {
+	text-align: center;
+}
+
+.bottomBold {
+	font-weight: bold;
+	border-bottom: 1px solid lightgrey;
+}
+
+/* button hover */
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus .open>.dropdown-toggle.btn {
+    opacity: .90;
+}
+
+/* media query for piggy image */
+
+@media screen and (min-width: 570px) {
+	h1 {
+		text-align: left;
+		padding-top: 50px;
+		padding-left: 20px;
+		height: 155px;
+		background: url("http://i.imgur.com/uITYa0h.png");
+		background-repeat: no-repeat;
+		background-color: #88d8b0;
+		background-size: 150px 150px;
+		background-position: right bottom;
+		border-right: 20px solid #88d8b0;
+	}
+}
+
+/* remove the arrows from number input box */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
